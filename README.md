@@ -7,7 +7,7 @@
 
 ## Overview
 
-The T3 Technology T628L is an entry-level router distributed by True Digital Thailand, HW V1.1, running firmware version **v1.1.05L**. During a recent security assessment, multiple vulnerabilities were identified that allow remote attackers—and in some cases, unauthenticated attackers—to disclose sensitive information or execute arbitrary code. The issues affect various CGI executables (`ajax` and `download`) and consist of:
+The T3 Technology T628L is an entry-level router distributed by True Digital Thailand, HW V1.1, running firmware version **v1.1.05L**. During a recent security assessment, multiple vulnerabilities were identified that allow remote attackersand in some cases, unauthenticated attackersto disclose sensitive information or execute arbitrary code. The issues affect various CGI executables (`ajax` and `download`) and consist of:
 
 1. **Incorrect Access Control** in `ajax`: leaking admin and super-admin credentials via `get_factorytest_info` (CVE-2025-44099).
 2. **Incorrect Access Control** in `download`: arbitrary log file download via `download?{logtype}` (CVE-2025-44100).
@@ -320,7 +320,7 @@ address=1.1.1.1;cat+/etc/shadow;&ipversion=4&iors=-i&token=<valid-token>&ajaxmet
 
 ### 5.4 Impact
 
-* **Remote Code Execution (RCE) as root**—identical severity to **CVE-2025-44102**.
+* **Remote Code Execution (RCE) as root**identical severity to **CVE-2025-44102**.
 * The attacker can read arbitrary files (e.g., `/etc/shadow`, `/etc/passwd`) or execute any command with full privileges.
 * Complete device takeover and network pivoting become trivial.
 
