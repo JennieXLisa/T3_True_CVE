@@ -408,7 +408,7 @@ address=1.1.1.1;cat+/etc/shadow;&ipversion=4&iors=-i&token=<valid-token>&ajaxmet
 
 2. **Vendor URLs** (as listed in CVE notifications):
 
-   * [https://www.t3techgroup.com/]](https://www.t3techgroup.com/)
+   * [https://www.t3techgroup.com/](https://www.t3techgroup.com/)
    * [https://true.th](https://true.th)
 
 3. **CWE References:**
